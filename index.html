@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base - Tailwind CSS Startup Template</title>
-  <link rel="icon" href="favicon.ico"><link href="style.css" rel="stylesheet"></head>
+  <link rel="icon" href="favicon.ico"><link href="/style.css" rel="stylesheet"></head>
   <body
     x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
@@ -21,7 +21,7 @@
 >
   <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
     <div class="vd to/4 tc wf yf">
-      <a href="index.html">
+      <a href="/index.html">
         <img class="om" src="/logo-light.svg" alt="Logo Light" />
         <img class="xc nm" src="/logo-dark.svg" alt="Logo Dark" />
       </a>
@@ -49,8 +49,8 @@
     >
       <nav>
         <ul class="tc _o sf yo cg ep">
-          <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-          <li><a href="index.html#features" class="xl">Features</a></li>
+          <li><a href="index" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
+          <li><a href="index#features" class="xl">Features</a></li>
           <li class="c i" x-data="{ dropdown: false }">
             <a
               href="#"
@@ -69,15 +69,15 @@
 
             <!-- Dropdown Start -->
             <ul class="a" :class="{ 'tc': dropdown }">
-              <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
-              <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
-              <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
-              <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
-              <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
+              <li><a href="/blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
+              <li><a href="/blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
+              <li><a href="/signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
+              <li><a href="/signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
+              <li><a href="/404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
             </ul>
             <!-- Dropdown End -->
           </li>
-          <li><a href="index.html#support" class="xl">Support</a></li>
+          <li><a href="/index.html#support" class="xl">Support</a></li>
         </ul>
       </nav>
 
@@ -94,7 +94,7 @@
           </label>
         </div>
 
-        <a href="signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Sign In</a>
+        <a href="/signin.html" :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }" class="ek pk xl">Sign In</a>
         <a href="signup.html" :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">Sign Up</a>
       </div>
     </div>
@@ -879,7 +879,7 @@
                   </div>
                 </div>
                 <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Free advertising for your online business</a>
+                  <a href="/blog-single.html">Free advertising for your online business</a>
                 </h4>
               </div>
             </div>
@@ -910,7 +910,7 @@
                   </div>
                 </div>
                 <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">9 simple ways to improve your design skills</a>
+                  <a href="/blog-single.html">9 simple ways to improve your design skills</a>
                 </h4>
               </div>
             </div>
@@ -941,7 +941,7 @@
                   </div>
                 </div>
                 <h4 class="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">Tips to quickly improve your coding speed.</a>
+                  <a href="/blog-single.html">Tips to quickly improve your coding speed.</a>
                 </h4>
               </div>
             </div>
@@ -1373,5 +1373,5 @@
         };
       };
     </script>
-  <script defer src="bundle.js"></script></body>
+  <script defer src="/bundle.js"></script></body>
 </html>
